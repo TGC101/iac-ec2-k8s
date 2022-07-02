@@ -8,7 +8,7 @@ echo "CHECK ALL EC2 UP..."
 while true
 do
     ansible all -m ping > /dev/null
-    [[ "$?" == "0" ]] 
+    if [[ "$?" == "0" ]] 
     then
         echo "Ansible Play Time ~~"
         break
