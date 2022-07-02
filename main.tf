@@ -9,7 +9,7 @@ terraform {
 
 provider "aws" {
   region = "us-east-1"
-  shared_credentials_file = "/root/aws/credentials"
+  shared_credentials_file = "./credentials"
 }
 
 module "vpc" {
